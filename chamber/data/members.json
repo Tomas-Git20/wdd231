@@ -1,0 +1,74 @@
+[
+    {
+        "companyName": "Merlo Community Bank",
+        "address": "125 Avenida del Libertador, Merlo, Buenos Aires",
+        "phone": "+54 11 5555-1001",
+        "website": "https://example.com/merlo-community-bank",
+        "image": "merlo-community-bank.jpg",
+        "membershipLevel": 3,
+        "description": "A community-focused financial institution providing banking, lending, and financial education services to local residents and businesses."
+    },
+    {
+        "companyName": "Sierra Verde Café",
+        "address": "48 Calle Independencia, Merlo, Buenos Aires",
+        "phone": "+54 11 5555-1002",
+        "website": "https://example.com/sierra-verde-cafe",
+        "image": "sierra-verde-cafe.jpg",
+        "membershipLevel": 2,
+        "description": "A locally owned café serving fresh coffee, pastries, breakfast, and lunch in a welcoming neighborhood atmosphere."
+    },
+    {
+        "companyName": "Valley View Realty",
+        "address": "302 Avenida San Martín, Merlo, Buenos Aires",
+        "phone": "+54 11 5555-1003",
+        "website": "https://example.com/valley-view-realty",
+        "image": "valley-view-realty.jpg",
+        "membershipLevel": 3,
+        "description": "A full-service real estate company helping families and businesses find homes, commercial properties, and investment opportunities."
+    },
+    {
+        "companyName": "Andes Outdoor Adventures",
+        "address": "77 Calle Belgrano, Merlo, Buenos Aires",
+        "phone": "+54 11 5555-1004",
+        "website": "https://example.com/andes-outdoor-adventures",
+        "image": "andes-outdoor-adventures.jpg",
+        "membershipLevel": 2,
+        "description": "A local tourism and recreation company offering guided outdoor experiences, hiking excursions, and family-friendly adventures."
+    },
+    {
+        "companyName": "Green Horizon Landscaping",
+        "address": "214 Calle Mitre, Merlo, Buenos Aires",
+        "phone": "+54 11 5555-1005",
+        "website": "https://example.com/green-horizon-landscaping",
+        "image": "green-horizon-landscaping.jpg",
+        "membershipLevel": 1,
+        "description": "A professional landscaping business specializing in garden design, maintenance, irrigation, and environmentally responsible outdoor spaces."
+    },
+    {
+        "companyName": "Merlo Family Health Center",
+        "address": "519 Avenida Argentina, Merlo, Buenos Aires",
+        "phone": "+54 11 5555-1006",
+        "website": "https://example.com/merlo-family-health",
+        "image": "merlo-family-health.jpg",
+        "membershipLevel": 3,
+        "description": "A community health organization dedicated to accessible wellness programs, preventive care, and family health education."
+    },
+    {
+        "companyName": "Pampa Creative Studio",
+        "address": "91 Calle Rivadavia, Merlo, Buenos Aires",
+        "phone": "+54 11 5555-1007",
+        "website": "https://example.com/pampa-creative-studio",
+        "image": "pampa-creative-studio.jpg",
+        "membershipLevel": 1,
+        "description": "A creative agency providing branding, graphic design, photography, and digital marketing services for local organizations."
+    },
+    {
+        "companyName": "Community Harvest Market",
+        "address": "160 Calle Moreno, Merlo, Buenos Aires",
+        "phone": "+54 11 5555-1008",
+        "website": "https://example.com/community-harvest-market",
+        "image": "community-harvest-market.jpg",
+        "membershipLevel": 2,
+        "description": "A neighborhood market supporting regional producers and offering fresh food, specialty products, and locally made goods."
+    }
+]

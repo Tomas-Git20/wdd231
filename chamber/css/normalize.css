@@ -1,0 +1,67 @@
+/* =========================================================
+   Simple CSS Reset / Normalize
+   ========================================================= */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    background-color: transparent;
+    color: inherit;
+}
+
+img {
+    border-style: none;
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
