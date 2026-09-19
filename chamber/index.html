@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | Merlo Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the Merlo Chamber of Commerce. Explore local businesses, upcoming community events, current weather forecasts, and featured member spotlights.">
+    <meta name="author" content="Tomas Lo Giudice">
+
+    <meta property="og:title" content="Home | Merlo Chamber of Commerce">
+    <meta property="og:description" content="Discover opportunities, connect with local businesses, and grow with the Merlo Chamber of Commerce.">
+    <meta property="og:image" content="https://Tomas-Git20.github.io/wdd231/chamber/images/merlo-chamber-social.jpg">
+    <meta property="og:url" content="https://example.com/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="brand" href="index.html" aria-label="Merlo Chamber of Commerce home">
+                <span class="brand-mark">M</span>
+                <span class="brand-text">
+                    <strong>Merlo</strong>
+                    <small>Chamber of Commerce</small>
+                </span>
+            </a>
+
+            <button class="menu-button" id="menu-button" type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="primary-navigation">
+                <span>☰</span>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+                <a class="active" href="index.html" aria-current="page">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-container">
+            <div class="hero-image-wrapper">
+                <img src="images/hero-large.jpg" 
+                     srcset="images/hero-small.jpg 450w, images/hero-medium.jpg 800w, images/hero-large.jpg 1200w" 
+                     sizes="100vw" 
+                     alt="Aerial landscape view of Merlo community center" 
+                     loading="eager" 
+                     width="1200" 
+                     height="600">
+            </div>
+            <div class="hero-overlay">
+                <p class="eyebrow">Empowering Commerce, Enriching Life</p>
+                <h1>Building a Stronger Local Economy Together</h1>
+                <p>Connecting entrepreneurs, supporting innovation, and fostering community leadership across Merlo.</p>
+                <a href="join.html" class="cta-button">Join the Chamber Today</a>
+            </div>
+        </section>
+
+        <div class="home-grid">
+            <section class="card events-section">
+                <h2>Upcoming Events</h2>
+                <div class="event-item">
+                    <p class="event-date">October 12, 2026</p>
+                    <h3>Annual Regional Business Summit</h3>
+                    <p>Join civic leaders and local business owners at the Merlo Convention Center for networking and keynote insights into economic growth.</p>
+                </div>
+                <hr>
+                <div class="event-item">
+                    <p class="event-date">October 28, 2026</p>
+                    <h3>Small Business Tech Workshop</h3>
+                    <p>Learn practical strategies to integrate digital tools and improve online customer engagement in this hands-on evening seminar.</p>
+                </div>
+            </section>
+
+            <section class="card weather-section">
+                <h2>Local Weather</h2>
+                <div id="weather-card-content" class="weather-content">
+                    <div class="current-weather">
+                        <span class="weather-temp" id="current-temp">--°C</span>
+                        <div class="weather-icon-wrapper">
+                            <img id="weather-icon" src="" alt="Weather condition icon" style="display:none;">
+                            <span id="weather-description">Loading weather...</span>
+                        </div>
+                    </div>
+                    <div class="weather-details">
+                        <p>Humidity: <span id="humidity">--</span>%</p>
+                        <p>Wind Speed: <span id="wind-speed">--</span> km/h</p>
+                    </div>
+                    <h3>3-Day Forecast</h3>
+                    <div class="forecast-container" id="forecast-container">
+                    </div>
+                </div>
+            </section>
+
+            <section class="spotlights-section">
+                <h2>Member Spotlights</h2>
+                <div class="spotlights-grid" id="spotlights-grid">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">M</div>
+                <div>
+                    <h2>Merlo Chamber of Commerce</h2>
+                    <p>Connecting local business with community opportunity.</p>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <p>123 Main Street</p>
+                <p>Merlo, Buenos Aires, Argentina</p>
+                <p>Email: info@merlochamber.example</p>
+                <p>Phone: +54 11 5555-0100</p>
+            </div>
+
+            <div class="social-links" aria-label="Social media links">
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Instagram">◎</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="current-year"></span>
+                Merlo Chamber of Commerce
+            </p>
+            <p>
+                Last Modification:
+                <span id="last-modified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
