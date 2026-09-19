@@ -61,29 +61,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function displayCurrentWeather(data) {
-        const tempElement = document.getElementById("current-temp");
-        const descElement = document.getElementById("weather-description");
-        const iconElement = document.getElementById("weather-icon");
-        const humidityElement = document.getElementById("humidity");
-        const windSpeedElement = document.getElementById("wind-speed");
+    const tempElement = document.getElementById("current-temp");
+    const descElement = document.getElementById("weather-description");
+    const iconElement = document.getElementById("weather-icon");
+    const humidityElement = document.getElementById("humidity");
+    const windSpeedElement = document.getElementById("wind-speed");
 
-        if (tempElement) tempElement.textContent = `${Math.round(data.main.temp)}°C`;
-        if (humidityElement) humidityElement.textContent = data.main.humidity;
-        if (windSpeedElement) windSpeedElement.textContent = Math.round(data.wind.speed * 3.6);
+    if (tempElement) tempElement.textContent = `${Math.round(data.main.temp)}°C`;
+    if (humidityElement) humidityElement.textContent = data.main.humidity;
+    if (windSpeedElement) windSpeedElement.textContent = Math.round(data.wind.speed * 3.6);
 
-        if (data.weather && data.weather.length > 0) {
-            const condition = data.weather[0];
-            const descriptionCapitalized = condition.description.charAt(0).toUpperCase() + condition.description.slice(1);
+    if (data.weather && data.weather.length > 0) {
+        const condition = data.weather[0];
+        const descriptionCapitalized = condition.description.charAt(0).toUpperCase() + condition.description.slice(1);
+        
+        if (descElement) descElement.textContent = descriptionCapitalized;
+
+        if (iconElement) {
+            iconElement.src = `https://openweathermap.org/img/wn/${condition.icon}@2x.png`;
+            iconElement.alt = descriptionCapitalized;
             
-            if (descElement) descElement.textContent = descriptionCapitalized;
-
-            if (iconElement) {
-                iconElement.src = `https://openweathermap.org/img/wn/${condition.icon}@2x.png`;
-                iconElement.alt = descriptionCapitalized;
-                iconElement.style.display = "inline-block";
-            }
+            // Se maneja la visibilidad alternando clases CSS
+            iconElement.classList.remove("hidden");
+            iconElement.classList.add("visible");
         }
     }
+}
 
     function displayForecast(data) {
         const forecastContainer = document.getElementById("forecast-container");

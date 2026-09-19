@@ -764,3 +764,11 @@ button:focus-visible {
         transition: none !important;
     }
 }
+
+.weather-icon.hidden {
+    display: none;
+}
+
+.weather-icon.visible {
+    display: inline-block;
+}
