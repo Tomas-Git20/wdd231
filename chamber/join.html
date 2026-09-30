@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join Us | Merlo Chamber of Commerce</title>
+    <meta name="description" content="Apply for membership with the Merlo Chamber of Commerce. Select a membership tier to access networking events, training, and promotional opportunities.">
+    <meta name="author" content="Tomas Lo Giudice">
+
+    <meta property="og:title" content="Join Us | Merlo Chamber of Commerce">
+    <meta property="og:description" content="Become a member of the Merlo Chamber of Commerce and grow your business today.">
+    <meta property="og:image" content="https://Tomas-Git20.github.io/wdd231/chamber/images/merlo-chamber-social.jpg">
+    <meta property="og:url" content="https://example.com/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="brand" href="index.html" aria-label="Merlo Chamber of Commerce home">
+                <span class="brand-mark">M</span>
+                <span class="brand-text">
+                    <strong>Merlo</strong>
+                    <small>Chamber of Commerce</small>
+                </span>
+            </a>
+
+            <button class="menu-button" id="menu-button" type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="primary-navigation">
+                <span>☰</span>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html">Directory</a>
+                <a class="active" href="join.html" aria-current="page">Join</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="hero-content">
+                <p class="eyebrow">Become a Member</p>
+                <h1>Chamber Membership Application</h1>
+                <p>Empower your business through networking, exposure, and community leadership.</p>
+            </div>
+        </section>
+
+        <div class="join-layout">
+            <!-- Membership Application Form -->
+            <section class="form-container">
+                <h2>Application Form</h2>
+                <form method="get" action="thankyou.html" id="chamber-join-form">
+                    
+                    <label title="First Name">
+                        <span>First Name *</span>
+                        <input type="text" name="fname" id="fname" required autocomplete="given-name" title="Please enter your first name">
+                    </label>
+
+                    <label title="Last Name">
+                        <span>Last Name *</span>
+                        <input type="text" name="lname" id="lname" required autocomplete="family-name" title="Please enter your last name">
+                    </label>
+
+                    <label title="Organizational Title">
+                        <span>Organizational Title</span>
+                        <input type="text" name="title" id="org-title" autocomplete="organization-title" 
+                               pattern="[A-Za-z\s\-]{7,}" 
+                               title="Title must contain only letters, hyphens, and spaces with a minimum of 7 characters.">
+                    </label>
+
+                    <label title="Email Address">
+                        <span>Email Address *</span>
+                        <input type="email" name="email" id="email" required autocomplete="email" 
+                               placeholder="example@domain.com" title="Please enter a valid email address">
+                    </label>
+
+                    <label title="Mobile Phone Number">
+                        <span>Mobile Phone *</span>
+                        <input type="tel" name="phone" id="phone" required autocomplete="tel" title="Please enter your mobile phone number">
+                    </label>
+
+                    <label title="Organization Name">
+                        <span>Business / Organization Name *</span>
+                        <input type="text" name="organization" id="organization" required autocomplete="organization" title="Please enter your business or organization name">
+                    </label>
+
+                    <fieldset class="membership-selection">
+                        <legend>Membership Level *</legend>
+                        <label class="radio-label" title="NP Membership (Non-Profit)">
+                            <input type="radio" name="membership" value="np" required>
+                            NP Membership (For Non-Profit Organizations - Free)
+                        </label>
+                        <label class="radio-label" title="Bronze Membership">
+                            <input type="radio" name="membership" value="bronze">
+                            Bronze Membership
+                        </label>
+                        <label class="radio-label" title="Silver Membership">
+                            <input type="radio" name="membership" value="silver">
+                            Silver Membership
+                        </label>
+                        <label class="radio-label" title="Gold Membership">
+                            <input type="radio" name="membership" value="gold">
+                            Gold Membership
+                        </label>
+                    </fieldset>
+
+                    <label title="Organization Description">
+                        <span>Organization Description</span>
+                        <textarea name="description" id="description" rows="4" title="Provide a brief description of your organization"></textarea>
+                    </label>
+
+                    <!-- Hidden Timestamp Field -->
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Complete Application" class="submit-btn">
+                </form>
+            </section>
+
+            <!-- Membership Level Benefit Cards -->
+            <aside class="membership-cards-container">
+                <h2>Membership Tiers</h2>
+                
+                <div class="membership-card level-np">
+                    <h3>NP Membership</h3>
+                    <p class="cost">Free for Non-Profits</p>
+                    <button type="button" class="open-modal-btn" data-modal="modal-np">View Benefits</button>
+                </div>
+
+                <div class="membership-card level-bronze">
+                    <h3>Bronze Membership</h3>
+                    <p class="cost">$250 / year</p>
+                    <button type="button" class="open-modal-btn" data-modal="modal-bronze">View Benefits</button>
+                </div>
+
+                <div class="membership-card level-silver">
+                    <h3>Silver Membership</h3>
+                    <p class="cost">$500 / year</p>
+                    <button type="button" class="open-modal-btn" data-modal="modal-silver">View Benefits</button>
+                </div>
+
+                <div class="membership-card level-gold">
+                    <h3>Gold Membership</h3>
+                    <p class="cost">$1,000 / year</p>
+                    <button type="button" class="open-modal-btn" data-modal="modal-gold">View Benefits</button>
+                </div>
+            </aside>
+        </div>
+
+        <!-- HTML Modals for Membership Benefits -->
+        <dialog id="modal-np" class="benefits-modal">
+            <div class="modal-content">
+                <button type="button" class="close-modal-btn" aria-label="Close modal">&times;</button>
+                <h3>NP Membership Benefits</h3>
+                <ul>
+                    <li>Designed exclusively for registered 501(c)(3) or local non-profit groups.</li>
+                    <li>Basic listing in the online Chamber Directory.</li>
+                    <li>Access to community networking mixers.</li>
+                    <li>Access to Chamber resource guides.</li>
+                </ul>
+            </div>
+        </dialog>
+
+        <dialog id="modal-bronze" class="benefits-modal">
+            <div class="modal-content">
+                <button type="button" class="close-modal-btn" aria-label="Close modal">&times;</button>
+                <h3>Bronze Membership Benefits</h3>
+                <ul>
+                    <li>Standard Chamber Directory listing with logo and link.</li>
+                    <li>Invitation to monthly networking breakfasts.</li>
+                    <li>15% discount on Chamber workshop tickets.</li>
+                    <li>Social media welcome highlight.</li>
+                </ul>
+            </div>
+        </dialog>
+
+        <dialog id="modal-silver" class="benefits-modal">
+            <div class="modal-content">
+                <button type="button" class="close-modal-btn" aria-label="Close modal">&times;</button>
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                    <li>Includes all Bronze level benefits.</li>
+                    <li>Eligible for random Home Page Spotlight advertisements.</li>
+                    <li>30% discount on event sponsorships and booth spaces.</li>
+                    <li>Access to professional development training series.</li>
+                </ul>
+            </div>
+        </dialog>
+
+        <dialog id="modal-gold" class="benefits-modal">
+            <div class="modal-content">
+                <button type="button" class="close-modal-btn" aria-label="Close modal">&times;</button>
+                <h3>Gold Membership Benefits</h3>
+                <ul>
+                    <li>Includes all Bronze and Silver level benefits.</li>
+                    <li>Priority placement on Home Page Member Spotlights.</li>
+                    <li>VIP table access at the Annual Regional Business Summit.</li>
+                    <li>Free admittance to all training sessions and workshops.</li>
+                    <li>Featured article in the quarterly Chamber newsletter.</li>
+                </ul>
+            </div>
+        </dialog>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">M</div>
+                <div>
+                    <h2>Merlo Chamber of Commerce</h2>
+                    <p>Connecting local business with community opportunity.</p>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <p>123 Main Street</p>
+                <p>Merlo, Buenos Aires, Argentina</p>
+                <p>Email: info@merlochamber.example</p>
+                <p>Phone: +54 11 5555-0100</p>
+            </div>
+
+            <div class="social-links" aria-label="Social media links">
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Instagram">◎</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Merlo Chamber of Commerce</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
