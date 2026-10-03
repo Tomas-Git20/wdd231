@@ -1,0 +1,21 @@
+/* ---------- Discover Named Grid Areas (Medium Screen: 641px - 1024px) ---------- */
+@media (min-width: 641px) {
+    .discover-grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "item-1 item-2"
+            "item-3 item-4"
+            "item-5 item-6"
+            "item-7 item-8";
+    }
+
+    /* CSS Hover Property Effect on Images (Desktop & Tablet only) */
+    .card-figure img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .card-figure:hover img {
+        transform: scale(1.08);
+        filter: brightness(1.08) contrast(1.05);
+    }
+}
