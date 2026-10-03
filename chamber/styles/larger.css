@@ -103,3 +103,15 @@
         padding-right: 0;
     }
 }
+
+/* ---------- Discover Named Grid Areas (Large Screen: 1025px+) ---------- */
+@media (min-width: 1025px) {
+    .discover-grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "item-1 item-1 item-2"
+            "item-3 item-4 item-2"
+            "item-5 item-6 item-6"
+            "item-7 item-8 item-8";
+    }
+}

@@ -1038,3 +1038,107 @@ button:focus-visible {
         border-bottom: none;
     }
 }
+
+/* ---------- Visit Banner ---------- */
+.visit-message-container {
+    max-width: var(--max-width);
+    margin: 1.5rem auto 1rem;
+    padding: 0 1rem;
+}
+
+.visit-banner {
+    background: var(--accent);
+    color: var(--primary-dark);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius);
+    border-left: 5px solid var(--primary);
+    font-weight: 700;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+/* ---------- Discover Named Grid Areas (Small Screen: 320px - 640px) ---------- */
+.discover-grid-container {
+    display: grid;
+    gap: 1.5rem;
+    max-width: var(--max-width);
+    margin: 1.5rem auto 3rem;
+    padding: 0 1rem;
+    
+    /* 1 Column Layout with Named Grid Areas */
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "item-1"
+        "item-2"
+        "item-3"
+        "item-4"
+        "item-5"
+        "item-6"
+        "item-7"
+        "item-8";
+}
+
+.discover-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+}
+
+.discover-card h2 {
+    font-size: 1.3rem;
+    color: var(--primary-dark);
+    margin-bottom: 0.75rem;
+}
+
+.card-figure {
+    margin: 0 0 1rem 0;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #f1f5f9;
+}
+
+.card-figure img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    display: block;
+}
+
+/* Mobile View: No hover scale/filter effect applied to images */
+
+.discover-card address {
+    font-style: normal;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+}
+
+.discover-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text);
+    margin-bottom: 1.25rem;
+    flex-grow: 1;
+}
+
+.learn-more-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    align-self: start;
+    transition: background 0.2s ease;
+}
+
+.learn-more-btn:hover {
+    background: var(--primary-dark);
+}
