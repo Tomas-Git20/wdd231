@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Argentina Through Time">
+  <meta name="description" content="Review the information submitted through the Argentina Through Time demonstration form.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#12355B">
+
+  <title>Form Submission | Argentina Through Time</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/form.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="logo" href="index.html">Argentina Through Time</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container section">
+    <h1>Form submission</h1>
+    <p id="form-status" role="status" aria-live="polite">
+      Reading submitted information…
+    </p>
+
+    <dl id="submission-details" class="submission-details" hidden>
+      <dt>Name</dt><dd id="result-name"></dd>
+      <dt>Email</dt><dd id="result-email"></dd>
+      <dt>Topic</dt><dd id="result-topic"></dd>
+      <dt>Message</dt><dd id="result-message"></dd>
+    </dl>
+
+    <p class="form-note">
+      This is a client-side demonstration. The information is not
+      delivered to an inbox or stored in a database.
+    </p>
+    <a class="button" href="index.html">Return home</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>Argentina Through Time — an educational history project.</p>
+      <p><a href="about.html#attributions">Attributions and sources</a></p>
+    </div>
+  </footer>
+</body>
+</html>

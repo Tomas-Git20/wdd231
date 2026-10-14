@@ -1,0 +1,164 @@
+[
+  {
+    "id": "independence",
+    "date": "1816-07-09",
+    "year": 1816,
+    "title": "Declaration of Independence",
+    "category": "Independence",
+    "summary": "The Congress of Tucumán declared the independence of the United Provinces of the Río de la Plata from Spanish rule.",
+    "significance": "The declaration marked a defining milestone in the process of establishing an independent political community."
+  },
+  {
+    "id": "provincial-autonomy",
+    "date": "1820",
+    "year": 1820,
+    "title": "Provincial Autonomy",
+    "category": "Nation Building",
+    "summary": "Political authority became fragmented among provinces following the collapse of the central government.",
+    "significance": "Provincial autonomy and disagreements about federalism shaped subsequent efforts to organize the country."
+  },
+  {
+    "id": "rosas",
+    "date": "1829",
+    "year": 1829,
+    "title": "Rise of Juan Manuel de Rosas",
+    "category": "Nation Building",
+    "summary": "Juan Manuel de Rosas became governor of Buenos Aires and a dominant figure in regional politics.",
+    "significance": "His influence reflected continuing conflicts over political authority, federalism and national organization."
+  },
+  {
+    "id": "constitution",
+    "date": "1853",
+    "year": 1853,
+    "title": "Constitution of 1853",
+    "category": "Nation Building",
+    "summary": "Representatives of the Argentine Confederation adopted a constitution establishing a federal framework.",
+    "significance": "The constitution became a foundation of Argentina's national political institutions. Buenos Aires initially remained outside the Confederation."
+  },
+  {
+    "id": "national-unification",
+    "date": "1862",
+    "year": 1862,
+    "title": "National Political Unification",
+    "category": "Nation Building",
+    "summary": "Bartolomé Mitre assumed the presidency after the political reunification of Buenos Aires and the Confederation.",
+    "significance": "National authorities consolidated institutions, although conflict and territorial expansion continued."
+  },
+  {
+    "id": "federal-capital",
+    "date": "1880",
+    "year": 1880,
+    "title": "Buenos Aires Becomes the Federal Capital",
+    "category": "Nation Building",
+    "summary": "Buenos Aires was federalized and established as the national capital.",
+    "significance": "The decision helped resolve a major dispute over the relationship between the capital and the provinces."
+  },
+  {
+    "id": "immigration",
+    "date": "1880",
+    "year": 1880,
+    "title": "Immigration and Export Growth",
+    "category": "Economic Development",
+    "summary": "Agricultural exports, railways, urbanization and large-scale immigration transformed Argentine society.",
+    "significance": "Export-led growth connected Argentina more closely to international markets while changing its population and cities."
+  },
+  {
+    "id": "saenz-pena",
+    "date": "1912",
+    "year": 1912,
+    "title": "Sáenz Peña Electoral Reform",
+    "category": "Democracy",
+    "summary": "Electoral reform established secret and compulsory voting for Argentine male citizens within the system's eligibility rules.",
+    "significance": "The reform helped broaden electoral participation and changed national political competition."
+  },
+  {
+    "id": "yrigoyen",
+    "date": "1916",
+    "year": 1916,
+    "title": "Yrigoyen Becomes President",
+    "category": "Democracy",
+    "summary": "Hipólito Yrigoyen of the Radical Civic Union assumed the presidency after the 1916 election.",
+    "significance": "His election marked a major shift in electoral politics following the reforms of the preceding years."
+  },
+  {
+    "id": "coup-1930",
+    "date": "1930",
+    "year": 1930,
+    "title": "Military Coup of 1930",
+    "category": "Military Rule",
+    "summary": "A military coup overthrew President Hipólito Yrigoyen.",
+    "significance": "The coup initiated a prolonged period of political instability and weakened democratic continuity."
+  },
+  {
+    "id": "peronism",
+    "date": "1946",
+    "year": 1946,
+    "title": "First Perón Presidency",
+    "category": "Social Change",
+    "summary": "Juan Domingo Perón began his first presidential term after winning the 1946 election.",
+    "significance": "Peronism reshaped labor politics, social policy, political identity and debates about the role of the state."
+  },
+  {
+    "id": "womens-suffrage",
+    "date": "1947",
+    "year": 1947,
+    "title": "Women's Suffrage",
+    "category": "Social Change",
+    "summary": "Law 13,010 recognized women's right to vote and participate in national elections.",
+    "significance": "Women voted in a national election for the first time in 1951, expanding democratic participation."
+  },
+  {
+    "id": "coup-1955",
+    "date": "1955",
+    "year": 1955,
+    "title": "Overthrow of Perón",
+    "category": "Military Rule",
+    "summary": "A military uprising overthrew President Juan Domingo Perón.",
+    "significance": "Political exclusion, conflict over Peronism and military intervention contributed to decades of instability."
+  },
+  {
+    "id": "dictatorship",
+    "date": "1976",
+    "year": 1976,
+    "title": "Military Dictatorship Begins",
+    "category": "Military Rule",
+    "summary": "A coup established the military government known as the National Reorganization Process.",
+    "significance": "State terrorism, forced disappearances, torture and repression left a profound legacy in Argentine society."
+  },
+  {
+    "id": "malvinas-war",
+    "date": "1982",
+    "year": 1982,
+    "title": "Falklands/Malvinas War",
+    "category": "Military Rule",
+    "summary": "Argentina and the United Kingdom fought a war over the Falkland Islands, known in Argentina as the Islas Malvinas.",
+    "significance": "Argentina's defeat further undermined the military government and accelerated the return to constitutional democracy."
+  },
+  {
+    "id": "democracy-1983",
+    "date": "1983",
+    "year": 1983,
+    "title": "Return to Democracy",
+    "category": "Democracy",
+    "summary": "Raúl Alfonsín won the 1983 presidential election, restoring elected civilian government.",
+    "significance": "The democratic transition opened a new period of constitutional government and efforts to address dictatorship-era human rights abuses."
+  },
+  {
+    "id": "crisis-2001",
+    "date": "2001",
+    "year": 2001,
+    "title": "Economic and Political Crisis",
+    "category": "Economic Development",
+    "summary": "A deep economic crisis culminated in sovereign debt default, banking restrictions and widespread protests.",
+    "significance": "The crisis exposed serious weaknesses in the economic model and led to major political changes."
+  },
+  {
+    "id": "milei",
+    "date": "2023-12-10",
+    "year": 2023,
+    "title": "Javier Milei Assumes the Presidency",
+    "category": "Contemporary Argentina",
+    "summary": "Javier Milei took office as president and pursued fiscal adjustment, deregulation and changes to the state's economic role.",
+    "significance": "His administration intensified national debates about inflation, public spending, social protections and economic reform."
+  }
+]

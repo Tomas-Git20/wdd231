@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Argentina Through Time">
+  <meta name="description" content="Learn about the purpose, audience, design principles, color palette, typography and historical references behind Argentina Through Time.">
+  <meta name="theme-color" content="#12355B">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About | Argentina Through Time">
+  <meta property="og:description" content="Explore the educational goals, responsive design and historical sources of this website.">
+  <meta property="og:url" content="https://example.com/about.html">
+  <meta property="og:image" content="https://example.com/assets/argentina-history.jpg">
+
+  <title>About the Project | Argentina Through Time</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="logo" href="index.html">Argentina Through Time</a>
+      <button class="menu-toggle" type="button"
+        aria-expanded="false" aria-controls="primary-nav"
+        aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">About this website</p>
+        <h1>Our Site Plan</h1>
+        <p>
+          The goals, audience and design decisions behind
+          Argentina Through Time.
+        </p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="content-grid">
+        <article class="info-panel">
+          <h2>Site purpose</h2>
+          <p>
+            Argentina Through Time introduces readers to the nation's
+            history from the independence declaration of 1816 through
+            political, economic, social and cultural developments to 2026.
+          </p>
+        </article>
+
+        <article class="info-panel">
+          <h2>Target audience</h2>
+          <p>
+            The intended audience includes students, educators,
+            travelers and general readers looking for an accessible
+            introduction to Argentine history.
+          </p>
+        </article>
+
+        <article class="info-panel">
+          <h2>Scenarios</h2>
+          <ul>
+            <li>When did Argentina declare independence?</li>
+            <li>How did federalism shape the country?</li>
+            <li>What led to the restoration of democracy in 1983?</li>
+            <li>Which events shaped Argentina in the 21st century?</li>
+          </ul>
+        </article>
+
+        <article class="info-panel">
+          <h2>Typography</h2>
+          <p>
+            Georgia is used for headings to provide a traditional
+            editorial style. Arial is used for body text and controls
+            to support readability.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-tinted">
+      <div class="container">
+        <h2>Color palette</h2>
+        <div class="palette-grid">
+          <div class="palette-item">
+            <span class="palette-swatch swatch-navy"></span>
+            <strong>Navy blue</strong>
+            <code>#12355B</code>
+          </div>
+          <div class="palette-item">
+            <span class="palette-swatch swatch-sky"></span>
+            <strong>Sky blue</strong>
+            <code>#5DA9E9</code>
+          </div>
+          <div class="palette-item">
+            <span class="palette-swatch swatch-light"></span>
+            <strong>Light blue</strong>
+            <code>#EAF4FB</code>
+          </div>
+          <div class="palette-item">
+            <span class="palette-swatch swatch-white"></span>
+            <strong>White</strong>
+            <code>#FFFFFF</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <h2>Responsive wireframe</h2>
+      <p>
+        On desktop, navigation appears horizontally and content is
+        organized into multiple columns. On smaller screens, navigation
+        opens with a menu button and content cards stack vertically.
+      </p>
+
+      <div class="wireframe">
+        <div class="wire-box">HEADER / LOGO / NAVIGATION</div>
+        <div class="wire-box">HERO / PAGE INTRODUCTION</div>
+        <div class="wire-columns">
+          <div class="wire-box">MAIN CONTENT / TIMELINE</div>
+          <div class="wire-box">FILTERS / SUPPORTING CONTENT</div>
+        </div>
+        <div class="wire-box">FOOTER / ATTRIBUTIONS</div>
+      </div>
+    </section>
+
+    <section id="attributions" class="container section">
+      <h2>Attributions and historical sources</h2>
+      <p>
+        The following institutions provide resources for verifying
+        historical dates, documents and interpretations.
+      </p>
+      <ul class="source-list">
+        <li>
+          <a href="https://www.argentina.gob.ar/"
+            target="_blank" rel="noopener noreferrer">
+            Government of Argentina
+          </a> — official government information.
+        </li>
+        <li>
+          <a href="https://www.cultura.gob.ar/"
+            target="_blank" rel="noopener noreferrer">
+            Argentina's cultural institutions
+          </a> — cultural heritage and historical material.
+        </li>
+        <li>
+          <a href="https://www.britannica.com/place/Argentina"
+            target="_blank" rel="noopener noreferrer">
+            Encyclopaedia Britannica: Argentina
+          </a> — general historical reference.
+        </li>
+      </ul>
+      <p class="form-note">
+        The historical data on this website is an educational summary.
+        Consult primary documents and specialist scholarship for
+        academic research. Verify individual claims against the
+        references before publishing.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>Argentina Through Time — an educational history project.</p>
+      <p><a href="#attributions">Attributions and sources</a></p>
+      <p>&copy; <span data-current-year>2026</span> Argentina Through Time</p>
+    </div>
+  </footer>
+</body>
+</html>
